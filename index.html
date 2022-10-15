@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shawn Ballay Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shawn Ballay Portfolio - HTML & CSS VERSION</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <script src="js/tota11y.min.js"></script>
+    <script>src="index.js"</script>
 </head>
 
-<body>Updated Portfolio for Shawn Ballay
-
-    <header>
-    </header>
+<body>
+    <img class="hero-image" src="/img/background-image.jpg" alt="">
+        <header class="landing-page">
+            <div class="heading__line-one">
+                Hi, I'm <span class="header-name">Shawn</span>.
+            </div>
+            <div class="heading__line-two">
+                I'm a web developer.
+            </div>
+            <div class="heading__line-three">I also like to 
+                <!-- animated list of other things you "are" -->
+                <span class="typed-out"></span>
+            </div>
+            <div class="link-div">
+                <a href="#about" class="view-work-link">View my work
+                    <span><img class="down-arrow" src="/img/down-arrow.svg" alt=""></span>
+                </a>
+            </div>
+        </header>
+    </img>
 
     <main>
+        <div class="sticky-header"></div>
+        <div class="about-section" id="about">
+            About me
+        </div>
+        <div class="project-section">
+            Projects
+        </div>
+        <div class="contact-section">
+            Contact
+        </div>
     </main>
 
     <footer>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".typed-out", {
+            strings: ["make music", "stay fit", "do other stuff"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+
 </body>
+
 </html>

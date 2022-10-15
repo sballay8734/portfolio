@@ -1,0 +1,120 @@
+:root {
+    --main-background-color: #1a1a1a;
+    --span-color: #70A2FF;
+    --text-color: #fafafa;
+    --font: Montserrat, sans-serif;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    font-weight: 300;
+}
+
+/*********************************** Header ***********************************/
+
+.hero-image {
+    filter: brightness(40%);
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    height: 100vh;
+}
+
+.header-name {
+    color: var(--span-color);
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-work-link {
+    margin-top: 1rem;
+}
+
+.down-arrow {
+    height: 1rem;
+    width: 1rem;
+    margin-left: .5rem;
+    margin-right: .25rem;
+    color: var(--span-color);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.view-work-link {
+    text-decoration: none;
+    color: var(--span-color);
+    font-size: 1.5rem;
+    padding: .3rem .6rem .3rem .9rem;
+
+    border: .1rem solid var(--span-color);
+    border-radius: .2rem;
+}
+
+.link-div {
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.link-div:hover,
+.link-div:focus {
+    outline-color: var(--main-background-color);
+    outline-offset: 15px;
+    box-shadow: 0 0.3em 0.5em -0.4em var(--span-color);
+    transform: translateY(-.10em);
+}
+
+.heading__line-three {
+    display: flex;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.typed-out::after {
+    display: block;
+    overflow: hidden;
+    border-right: .25rem solid var(--span-color);
+    width: 0;
+    animation: typing 2s forwards;
+    margin-left: .7rem;
+    content: "";
+    animation: typing 1s steps(18,end) forwards,
+               blink .8s infinite;
+    color: var(--span-color);
+}
+
+@keyframes typing {
+    from {width: 0%}
+    to {width: 99%}
+}
+
+@keyframes blink {
+    from {border-color: transparent}
+    to {border-color: var(--span-color)}
+}
+
+/*********************************** Header ***********************************/
