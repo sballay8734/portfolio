@@ -39,14 +39,20 @@
     </img>
 
     <main>
-        <div class="sticky-header"></div>
-        <div class="about-section" id="about">
-            About me
+        <div class="sticky-header">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="project-section">
+        <img class="hero-image" src="/img/background-image.jpg" alt="">
+            <div class="about-section" id="about">
+                About me
+            </div>
+        </img>
+        <div class="project-section" id="projects">
             Projects
         </div>
-        <div class="contact-section">
+        <div class="contact-section" id="contact">
             Contact
         </div>
     </main>
@@ -58,9 +64,9 @@
 
     <script>
         var typed = new Typed(".typed-out", {
-            strings: ["make music", "stay fit", "do other stuff"],
-            typeSpeed: 150,
-            backSpeed: 150,
+            strings: ["make music.", "read.", "stay fit.", "learn new things."],
+            typeSpeed: 75,
+            backSpeed: 50,
             loop: true
         })
     </script>

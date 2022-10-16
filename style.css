@@ -1,7 +1,8 @@
 :root {
     --main-background-color: #1a1a1a;
-    --span-color: #70A2FF;
+    --span-color: #026ecc;
     --text-color: #fafafa;
+    --text-color-secondary: #cc4c02;
     --font: Montserrat, sans-serif;
 }
 
@@ -27,6 +28,7 @@ header {
 
 .header-name {
     color: var(--span-color);
+    font-weight: 500;
 }
 
 .landing-page {
@@ -35,6 +37,7 @@ header {
     font-size: 3rem;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .view-work-link {
@@ -88,33 +91,72 @@ header {
     transform: translateY(-.10em);
 }
 
-.heading__line-three {
-    display: flex;
-    white-space: nowrap;
-    margin: 0 auto;
+.heading__line-two {
+    font-weight: 200;
 }
 
-.typed-out::after {
-    display: block;
-    overflow: hidden;
-    border-right: .25rem solid var(--span-color);
-    width: 0;
-    animation: typing 2s forwards;
-    margin-left: .7rem;
-    content: "";
-    animation: typing 1s steps(18,end) forwards,
-               blink .8s infinite;
-    color: var(--span-color);
+.heading__line-three,
+.heading__line-two {
+    text-align: center;
 }
 
-@keyframes typing {
-    from {width: 0%}
-    to {width: 99%}
-}
-
-@keyframes blink {
-    from {border-color: transparent}
-    to {border-color: var(--span-color)}
+.typed-out {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    text-align: center;
 }
 
 /*********************************** Header ***********************************/
+
+
+/*********************************** MAIN ***********************************/
+
+.sticky-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    font-size: 1.5rem;
+    height: 4rem;
+    background-color: #cfd9d8;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.sticky-header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.sticky-header a::after {
+    display: flex;
+    background-color: black;
+    /* height: 2px; */
+    width: 2px;
+    content: "";
+    transition: .3s ease-in;
+    transform-origin: bottom left;
+}
+
+.sticky-header a:hover::after {
+    width: 100%;
+    height: 2px;
+}
+
+.about-section {
+    height: 100px;
+}
+
+.project-section {
+    height: 100px;
+}
+
+.contact-section {
+    height: 100px;
+}
+
+
+/*********************************** MAIN ***********************************/
