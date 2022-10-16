@@ -1,8 +1,8 @@
 :root {
     --main-background-color: #1a1a1a;
-    --span-color: #026ecc;
+    --span-color: #02acbf;
     --text-color: #fafafa;
-    --text-color-secondary: #cc4c02;
+    --text-color-secondary: #bf3802;
     --font: Montserrat, sans-serif;
 }
 
@@ -11,19 +11,18 @@ body {
     color: var(--text-color);
     font-family: var(--font);
     font-weight: 300;
+    margin: 0;
 }
 
 /*********************************** Header ***********************************/
 
-.hero-image {
-    filter: brightness(40%);
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-}
-
 header {
     height: 100vh;
+    background-color: #845a4a;
+    background-image: url("img/background-image.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+
 }
 
 .header-name {
@@ -128,8 +127,13 @@ header {
     font-size: 1.5rem;
     height: 4rem;
     background-color: #cfd9d8;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+    /* border-top: 5px solid black;
+    border-bottom: 5px solid black; */
     position: sticky;
     top: 0;
 }
@@ -157,6 +161,44 @@ header {
 
 .about-section {
     height: 100px;
+    background-image: url("img/about-background.png");
+    background-color: #00191c;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 4rem;
+    height: 1000px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.about-section h3 {
+    margin: 0;
+    font-family: var(--font);
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    gap: 4rem;
+}
+
+.portrait {
+    border: 2px solid red;
+    height: 600px;
+    width: 400px;
+}
+
+.about__info {
+    border: 2px solid greenyellow;
+    height: 600px;
+    width: 400px;
 }
 
 .project-section {
@@ -166,6 +208,7 @@ header {
 .contact-section {
     height: 100px;
 }
+
 
 
 /*********************************** MAIN ***********************************/
