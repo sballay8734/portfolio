@@ -79,6 +79,7 @@ header {
 }
 
 .link-div {
+    margin-top: .2rem;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -90,6 +91,7 @@ header {
 .link-div:focus {
     outline-color: var(--main-background-color);
     outline-offset: 15px;
+  
     box-shadow: 0 0.4em 0.5em -0.5em white;
     transform: translateY(-.10em);
 }
