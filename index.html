@@ -12,28 +12,31 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <script src="js/tota11y.min.js"></script>
-    <script>src="index.js"</script>
+    <script>
+        src = "index.js"
+    </script>
 </head>
 
 <body>
     <img class="hero-image" src="/img/background-image.jpg" alt="">
-        <header class="landing-page">
-            <div class="heading__line-one">
-                Hi, I'm <span class="header-name">Shawn</span>.
-            </div>
-            <div class="heading__line-two">
-                I'm a web developer.
-            </div>
-            <div class="heading__line-three">I also like to 
-                <!-- animated list of other things you "are" -->
-                <span class="typed-out"></span>
-            </div>
-            <div class="link-div">
-                <a href="#about" class="view-work-link">View my work
-                    <span><img class="down-arrow" src="/img/down-arrow.svg" alt=""></span>
-                </a>
-            </div>
-        </header>
+    <header class="landing-page">
+        <div class="heading__line-one">
+            Hi, I'm <span class="header-name">Shawn</span>.
+        </div>
+        <div class="heading__line-two">
+            I'm a web developer.
+        </div>
+        <div class="heading__line-three">I also like to
+            <!-- animated list of other things you "are" -->
+            <span class="typed-out"></span>
+        </div>
+        <div class="link-div">
+            <a href="#about" class="view-work-link">View my work
+                <span><img class="down-arrow" src="/img/down-arrow.svg"
+                        alt=""></span>
+            </a>
+        </div>
+    </header>
     </img>
 
     <main>
@@ -43,9 +46,9 @@
             <a href="#contact">Contact</a>
         </div>
         <img class="hero-image" src="/img/background-image.jpg" alt="">
-            <div class="about-section" id="about">
-                About me
-            </div>
+        <div class="about-section" id="about">
+            About me
+        </div>
         </img>
         <div class="project-section" id="projects">
             Projects
@@ -62,7 +65,9 @@
 
     <script>
         var typed = new Typed(".typed-out", {
-            strings: ["make music.", "read.", "stay fit.", "learn new things."],
+            strings: ["make music.", "read.", "stay fit.",
+                "learn new things."
+            ],
             typeSpeed: 75,
             backSpeed: 50,
             loop: true
