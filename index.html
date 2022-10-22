@@ -43,17 +43,42 @@
         <div class="about-section" id="about">
             <h3 class="about-heading">ABOUT ME</h3>
             <div class="info-wrapper">
-                <div class="portrait">
-                    <img src="img/portrait.png" alt="">
+                <div class="portrait-wrapper">
+                    <div class="portrait">
+                        <img class="self-portrait" src="img/portrait.png" alt="">
+                    </div>
+                    <h6 class="portrait-nametag">Shawn Ballay</h6>
                 </div>
                 <div class="about__info">
-                    <h6 class="about__info-header">Teacher</h6>
-                    <p class="about__info-text">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Aperiam maxime quisquam
-                        esse minus reiciendis suscipit vitae repudiandae saepe
-                        tempora. Libero maxime beatae eligendi! Molestias
-                        laborum obcaecati recusandae, quaerat ad repellendus?
+                    <div class="about__info-header">
+                        <span class="about-typed-out"></span>
+                    </div>
+                    <p class="about__info-text">I am a <span
+                            class="info-spans">former teacher</span> who has
+                        finally found his professional <span
+                            class="info-spans">passion in software
+                            development</span>. I hold a <span
+                            class="info-spans">Master's Degree in Elementary
+                            Education</span> and cherish the time I was able to
+                        spend as an educator. I spend some of my free time
+                        continuing to work with kids as I've found it's <span
+                            class="info-spans">the one aspect of teaching I just
+                            can't give up</span>.
                     </p>
+                    <p class="about__info-text">
+                        In addition to my passions for <span class="info-spans">JavaScript</span> and <span class="info-spans">Tailwind CSS</span>, I also excel at making the <span class="info-spans">worst puns</span> you've never heard and filling 95% of my non work related conversation with <span class="info-spans">self-deprecating sarcasm</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="about-skills">
+                <div class="icon-wrapper">
+                    <img class="icon" src="img/html.png" alt="">
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon" src="img/javascript.png" alt="">
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon" src="img/CSS.png" alt="">
                 </div>
             </div>
         </div>
@@ -81,6 +106,15 @@
             ],
             typeSpeed: 75,
             backSpeed: 50,
+            loop: true
+        })
+    </script>
+
+    <script>
+        var typed = new Typed(".about-typed-out", {
+            strings: ["Teacher", "Web Developer"],
+            typeSpeed: 25,
+            backSpeed: 35,
             loop: true
         })
     </script>
