@@ -264,7 +264,7 @@ header {
     display: inline-block;
     font-size: 2.8rem;
     font-weight: bold;
-    color: black;
+    color: rgb(236, 250, 88);
 }
 
 .info-spans {
@@ -293,25 +293,12 @@ header {
     height: auto;
     display: flex;
     align-items: center;
-    animation: 2s icon-wrapper;
     /* background-color: white;
     border-radius: 100%; */
 }
 
-@keyframes icon-wrapper {
-    from {
-        margin-bottom: -400px;
-    }
-    to {
-        margin-left: 0;
-    }
-}
 
 .icon {
-    height: 100px;
-}
-
-.contact-section {
     height: 100px;
 }
 
@@ -378,24 +365,49 @@ header {
     
     border: 3px solid white;
     border-radius: 1.5rem;
-    margin: 1rem;
     min-width: 90%;
     min-height: 200px;
     position: relative;
+    overflow: hidden;
 }
 
-.image2 {
+.grid__project-image.image2 {
     background-image: url(img/tempImage2.jpg);
+    
 }
 
 .grid__project-name {
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    margin: 0;
     position: absolute;
+    padding: .5rem;
+    border-top-right-radius: 1rem;
+    bottom: 0;
+    font-size: 2.5rem;
+    margin: 0;
+    background-color: red;
+    transform: translateY(100%);
+    opacity: 0;
+
+    transition: all .5s;
+}
+
+.grid__project-name-right {
+    position: absolute;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 0;
     bottom: 0;
     right: 0;
-    font-size: 2.5rem;
+    transition: all .5s;
+}
+
+.grid__project-image:hover .grid__project-name {
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+.grid__project-image:hover .grid__project-name-right {
+    transform: translateX(100%);
+    opacity: 0;
 }
 
 .content-wrapper {
@@ -406,22 +418,22 @@ header {
 
 .content-wrapper p {
     margin: 0;
+    margin-top: 1rem;
     font-size: 1.5rem;
     text-align: left;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .bottom-content-wrapper {
     display: flex;
+    width: 100%;
 }
 
 .bottom-content-wrapper a {
     font-size: 2rem;
     text-decoration: none;
     color: var(--span-color);
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
+    margin-top: 1rem;
 }
 
 .bottom-content-wrapper a:hover {
@@ -429,3 +441,8 @@ header {
 }
 
 /*********************************** MAIN ***********************************/
+
+
+.contact-section {
+    height: 100px;
+}
