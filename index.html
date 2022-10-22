@@ -8,7 +8,7 @@
     <title>Shawn Ballay Portfolio - HTML & CSS VERSION</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@100;300;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata:wght@300&family=Montserrat:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -45,7 +45,8 @@
             <div class="info-wrapper">
                 <div class="portrait-wrapper">
                     <div class="portrait">
-                        <img class="self-portrait" src="img/portrait.png" alt="">
+                        <img class="self-portrait" src="img/portrait.png"
+                            alt="">
                     </div>
                     <h6 class="portrait-nametag">Shawn Ballay</h6>
                 </div>
@@ -66,10 +67,17 @@
                             can't give up</span>.
                     </p>
                     <p class="about__info-text">
-                        In addition to my passions for <span class="info-spans">JavaScript</span> and <span class="info-spans">Tailwind CSS</span>, I also excel at making the <span class="info-spans">worst puns</span> you've never heard and filling 95% of my non work related conversation with <span class="info-spans">self-deprecating sarcasm</span>.
+                        In addition to my passions for <span
+                            class="info-spans">JavaScript</span> and <span
+                            class="info-spans">Tailwind CSS</span>, I also excel
+                        at making the <span class="info-spans">worst puns</span>
+                        you've never heard and filling 95% of my non work
+                        related conversation with <span
+                            class="info-spans">self-deprecating sarcasm</span>.
                     </p>
                 </div>
             </div>
+            <!-- animation needs to be triggered on scroll -->
             <div class="about-skills">
                 <div class="icon-wrapper">
                     <img class="icon" src="img/html.png" alt="">
@@ -84,7 +92,35 @@
         </div>
         </img>
         <div class="project-section" id="projects">
-            Projects
+            <h3 class="project-heading">PROJECTS</h3>
+            <div class="grid">
+                <div class="grid-container">
+                    <div class="content-wrapper">
+                        <div class="grid__project-image">
+                            <h6 class="grid__project-name">simple js app</h6>
+                        </div>
+                        <p class="project-description">
+                            This project was created... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aspernatur porro maxime. Consequatur voluptatum iure unde reprehenderit, molestiae alias aut esse similique animi excepturi asperiores eveniet perferendis officia incidunt molestias.
+                        </p>
+                    </div>
+                    <div class="bottom-content-wrapper">
+                        <a href="#">View Code</a>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="content-wrapper">
+                        <div class="grid__project-image image2">
+                            <h6 class="grid__project-name">portfolio website</h6>
+                        </div>
+                        <p class="project-description">
+                            This project was created... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aspernatur porro maxime.
+                        </p>
+                    </div>
+                    <div class="bottom-content-wrapper">
+                        <a href="#">View Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contact-section" id="contact">
             Contact
